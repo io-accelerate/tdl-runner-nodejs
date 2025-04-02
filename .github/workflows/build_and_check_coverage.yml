@@ -1,0 +1,32 @@
+name: Node.js Test
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Optional: Install xmllint if still needed
+      - name: Install xmllint
+        run: sudo apt-get install -y libxml2-utils
+
+      # ~~~~~~~~~~~~~ Node.js setup ~~~~~~~~~~~~~
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' # or whatever version you're using
+
+      - name: Display Node.js version
+        run: node -v
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      # ~~~~~~~~~~~~~ Run ~~~~~~~~~~~~~
+      - name: Run and compute coverage
+        run: |
+          ./get_coverage_for_challenge.sh TST
+          grep "75" ./coverage.tdl
