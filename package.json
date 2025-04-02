@@ -12,18 +12,18 @@
     "url": "git+https://github.com/julianghionoiu/tdl-warmup.git"
   },
   "dependencies": {
-    "properties-reader": "0.0.15",
-    "tdl-client-nodejs": "0.26.3"
+    "properties-reader": "~2.3.0",
+    "tdl-client-nodejs": "~0.29.5"
   },
   "devDependencies": {
-    "nyc": "14.1.1",
-    "prettier": "^1.11.1",
-    "diveSync": "0.3.0",
-    "mocha": "^5.2.0"
+    "nyc": "~17.1.0",
+    "prettier": "~3.5.3",
+    "diveSync": "~0.3.0",
+    "mocha": "~11.1.0"
   },
   "engines": {
-    "node": ">=5.6.0",
-    "npm": ">=3.6.0"
+    "node": ">=22.14.0",
+    "npm": ">=11.2.0"
   },
   "keywords": [
     "tdl",
@@ -32,7 +32,7 @@
   "author": "Julian Ghionoiu",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/julianghionoiu/tdl-warmup/issues"
+    "url": "https://github.com/io-accelerate/tdl-runner-nodejs/issues"
   },
-  "homepage": "https://github.com/julianghionoiu/tdl-warmup#readme"
+  "homepage": "https://github.com/io-accelerate/tdl-runner-nodejs#readme"
 }

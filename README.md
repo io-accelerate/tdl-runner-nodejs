@@ -3,8 +3,8 @@
 
 ## 1. Requirements
 
-- `Node 6.1.0`
-- `NPM 3.6.0`
+- `Node 22.14.0`
+- `NPM 11.2.0`
 
 ## 2. How to start
 
