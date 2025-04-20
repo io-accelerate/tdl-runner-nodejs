@@ -9,5 +9,5 @@
 ## 2. How to start
 
 - Install dependencies `npm install`
-- Open `lib/send_command_to_server.js`
+- Open `lib/send_command_to_server.js` in your favorite IDE
 - Read the comments as documentation, they will guide through the rest of the setup
