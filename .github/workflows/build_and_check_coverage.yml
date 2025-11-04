@@ -11,7 +11,9 @@ jobs:
 
       # Optional: Install xmllint if still needed
       - name: Install xmllint
-        run: sudo apt-get install -y libxml2-utils
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
 
       # ~~~~~~~~~~~~~ Node.js setup ~~~~~~~~~~~~~
       - name: Set up Node.js
