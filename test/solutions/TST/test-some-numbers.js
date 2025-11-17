@@ -1,11 +1,9 @@
-var mocha = require('mocha')
-var describe = mocha.describe
-var it = mocha.it
-var assert = require('assert');
+import { describe, it } from 'mocha';
+import assert from 'node:assert';
 
-const one = require('../../../lib/solutions/TST/one');
+import one from '../../../lib/solutions/TST/one.js';
 // noinspection JSUnusedLocalSymbols
-const two = require('../../../lib/solutions/TST/two');
+import two from '../../../lib/solutions/TST/two.js';
 
 describe('TST challenge', function() {
 	it('show one', function() {

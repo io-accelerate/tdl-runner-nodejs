@@ -1,8 +1,6 @@
-var mocha = require('mocha')
-var describe = mocha.describe
-var it = mocha.it
-var assert = require('assert');
-const SumSolution = require('../../../lib/solutions/SUM/sum_solution');
+import { describe, it } from 'mocha';
+import assert from 'node:assert';
+import SumSolution from '../../../lib/solutions/SUM/sum_solution.js';
 
 describe('SUM challenge: adding two numbers', function() {
 	it('should return 3, which is the sum of 1 and 2', function() {
