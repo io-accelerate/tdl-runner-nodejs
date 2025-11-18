@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./lib/send_command_to_server.js",
     "test": "node --test test/**/*.js",
-    "coverage": "(node --test --experimental-test-coverage --test-reporter=tap --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info test/**/*.js || true) && node ./scripts/coverage-summary-from-lcov.js"
+    "coverage": "node -e \"require('node:fs').mkdirSync('coverage',{recursive:true});\" && (node --test --experimental-test-coverage --test-reporter=tap --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info test/**/*.js || true) && node ./scripts/coverage-summary-from-lcov.js"
   },
   "repository": {
     "type": "git",

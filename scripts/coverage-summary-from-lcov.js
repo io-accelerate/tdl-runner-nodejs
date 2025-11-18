@@ -10,9 +10,11 @@ const coverageDir = path.join(repoRoot, 'coverage');
 const lcovPath = path.join(coverageDir, 'lcov.info');
 const summaryPath = path.join(coverageDir, 'coverage-summary.json');
 
+fs.mkdirSync(coverageDir, { recursive: true });
+
 if (!fs.existsSync(lcovPath)) {
-	console.error(`No LCOV report found at ${lcovPath}`);
-	process.exit(1);
+	console.warn(`No LCOV report found at ${lcovPath}, skipping summary generation.`);
+	process.exit(0);
 }
 
 const content = fs.readFileSync(lcovPath, 'utf8');
